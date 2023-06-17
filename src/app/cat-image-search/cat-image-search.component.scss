@@ -1,0 +1,40 @@
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    gap: 20px;
+
+    &__button {
+        margin-top: 5px;
+        height: 45px;
+        font-size: 1.2em;
+    }
+}
+
+.cat {
+    &__container {
+        display: flex;
+        margin: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    &__card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        height: 200px;
+        width: 200px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        overflow: hidden;
+    }
+
+    &__image {
+        height: 200px;
+        width: auto;
+        border-radius: 5px;
+    }
+}

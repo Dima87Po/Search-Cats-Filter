@@ -1,0 +1,26 @@
+<form [formGroup]="searchForm" class="form">
+    <mat-form-field appearance="fill">
+        <mat-label>Breed</mat-label>
+        <mat-select formControlName="breed">
+            <mat-option value="">All Breeds</mat-option>
+            <mat-option *ngFor="let breed of breeds" [value]="breed.id">{{ breed.name }}</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Results</mat-label>
+        <mat-select formControlName="results" type="number">
+            <mat-option *ngFor="let number of limit" [value]="number">
+                {{number}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="searchImages()" class="form__button">Search</button>
+</form>
+
+<div class="cat__container">
+    <mat-card *ngFor="let image of catImages$ | async" class="cat__card">
+        <img [src]="image.url" [alt]="image.id" class="cat__image">
+    </mat-card>
+</div>
