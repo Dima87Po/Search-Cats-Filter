@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from './material/material.module';
 import { ReactiveFormsModule } from '@angular/forms';
-import { CatImageSearchComponent } from './cat-image-search/cat-image-search.component';
+import { CatImageSearchComponent } from './components/cat-image-search/cat-image-search.component';
 
 @NgModule({
   declarations: [

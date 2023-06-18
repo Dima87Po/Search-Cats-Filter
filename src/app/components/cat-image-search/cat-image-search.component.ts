@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Observable } from 'rxjs';
-import { Breed } from '../interfaces/cat';
-import { Cat } from '../interfaces/cat';
-import { CatImageService } from '../services/cat-image.service';
+import { Breed } from '../../interfaces/cat';
+import { Cat } from '../../interfaces/cat';
+import { CatImageService } from '../../services/cat-image.service';
 
 @Component({
   selector: 'app-cat-image-search',
